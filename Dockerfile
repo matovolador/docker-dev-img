@@ -2,9 +2,7 @@ FROM ubuntu:18.04
 
 LABEL maintainer="Matias Garafoni matias@bossnode.com"
 
-RUN apt-get update
-
-# copy setup script and execute
+# copy system setup script and execute
 COPY ubuntu-setup.sh /home/ubuntu-setup.sh
 RUN chmod +x /home/ubuntu-setup.sh
 RUN /bin/bash /home/ubuntu-setup.sh

@@ -12,3 +12,4 @@ y
 y
 y
 EOF
+service mysql restart
