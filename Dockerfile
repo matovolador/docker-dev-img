@@ -19,13 +19,6 @@ COPY mysql_config.sh /home/mysql_config.sh
 RUN chmod +x /home/mysql_config.sh
 RUN /bin/bash /home/mysql_config.sh
 
-
-# optional mysql-server installation with automated mysql_secure_installation
-# COPY mysql_secure.sh /home/mysql_secure.sh
-# RUN chmod +x /home/mysql_secure.sh
-# RUN /bin/bash /home/mysql_secure.sh secret
-
-
 # random port so it can start without annoying -already used- messages...
 EXPOSE 549
 
