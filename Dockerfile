@@ -20,8 +20,4 @@ RUN chmod +x /home/mysql_config.sh
 RUN /bin/bash /home/mysql_config.sh
 
 # random port so it can start without annoying -already used- messages...
-EXPOSE 549
-
-# not executing flask app on docker dev machine
-# ENTRYPOINT [ "python" ]
-# CMD [ "app/__init__.py" ]
+EXPOSE 80 443
